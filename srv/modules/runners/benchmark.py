@@ -284,7 +284,7 @@ def ganesha(**kwargs):
     Run ganesha benchmark jobs
     """
 
-    client_glob = kwargs.get('client_glob','I@roles:client-ganesha')
+    client_glob = kwargs.get('client_glob','I@roles:client-nfs')
     log.info('client glob is {}'.format(client_glob))
 
     dir_options = __parse_and_set_dirs(kwargs)
